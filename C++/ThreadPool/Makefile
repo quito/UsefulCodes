@@ -1,5 +1,5 @@
 
-NAME	=	GlRenderer
+NAME	=	ThreadPool
 
 SRC	=	ThreadPool.cpp \
 		main.cpp
