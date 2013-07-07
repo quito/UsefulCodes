@@ -2,15 +2,16 @@
 NAME	=	GlRenderer
 
 SRC	=	main.cpp \
-		renderer.cpp
+		renderer.cpp \
+		MultiCube.cpp 
 
 CC	=	clang++
 
 OBJ	=	$(SRC:.cpp=.o)
 
-CFLAGS =	-w -Wall -Wextra -ggdb
+CFLAGS =	-w -Wall -Wextra -O3
 
-LDFLAGS =	-lSDL -lGL -lGLU
+LDFLAGS =	-lSDL -lGL -lGLU -lglut
 
 $(NAME):	$(OBJ)
 		$(CC) $(OBJ) $(CFLAGS) -o $(NAME) $(LDFLAGS)
